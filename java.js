@@ -1,7 +1,4 @@
-<input type="text" id="inp" placeholder="Enter text">
-<button onclick="Add()">Add</button>
 
-<div id="text"></div>
 
 <script>
 let input = document.getElementById("inp");
@@ -19,3 +16,4 @@ function Add() {
     }
 }
 </script>
+
