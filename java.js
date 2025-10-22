@@ -1,16 +1,21 @@
+<input type="text" id="inp" placeholder="Enter text">
+<button onclick="Add()">Add</button>
+
+<div id="text"></div>
+
+<script>
 let input = document.getElementById("inp");
-let text = document.querySelector("text");
-function Add(){
-    if(input.value === " " ){
-alert("please enter text")
-    }else{
+let text = document.getElementById("text");
+
+function Add() {
+    if (input.value.trim() === "") {
+        alert("Please enter text");
+    } else {
         let newEle = document.createElement("ul");
-        newEle.innerHTML = '${inputs.value} <i class="fa-solid fa-trash"></i>';
+        newEle.innerHTML = `${input.value} <i class="fa-solid fa-trash"></i>`;
         text.appendChild(newEle);
-        input.value=" ";
-        newEle.querySelector("i").addEventListener("click" , remove);
-        function remove(){
-            newEle.remove()
-        }
+        input.value = "";
+        newEle.querySelector("i").addEventListener("click", () => newEle.remove());
     }
 }
+</script>
