@@ -1,6 +1,4 @@
 
-
-<script>
 let input = document.getElementById("inp");
 let text = document.getElementById("text");
 
@@ -15,5 +13,6 @@ function Add() {
         newEle.querySelector("i").addEventListener("click", () => newEle.remove());
     }
 }
-</script>
+
+
 
