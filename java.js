@@ -7,13 +7,15 @@ function Add() {
         alert("Please enter text");
     } else {
         let newEle = document.createElement("ul");
-        newEle.style.color = white;
+       
         newEle.innerHTML = `${input.value} <i class="fa-solid fa-trash"></i>`;
         text.appendChild(newEle);
         input.value = "";
         newEle.querySelector("i").addEventListener("click", () => newEle.remove());
+         newEle.style.color = white;
     }
 }
+
 
 
 
